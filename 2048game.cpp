@@ -142,7 +142,8 @@ bool move(char c) {
 //檢查是否已經合併出2048
 bool achieve() {
     for (const auto & row : board) {
-        for (int block : row) if (block == 2048) return true;
+        for (int block : row)
+            if (block == 2048) return true;
     }
     return false;
 }
